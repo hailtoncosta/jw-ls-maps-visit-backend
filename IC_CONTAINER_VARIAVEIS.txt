@@ -1,0 +1,18 @@
+Variaveis de ambiente recomendadas no container jw-ls-maps-visit-backend:
+
+DATABASE_URL=jdbc:postgresql://postgresql-17:5432/postgresql-jw-visit
+DATABASE_USERNAME=postgresql-jw-visit
+DATABASE_PASSWORD=<defina-a-senha-atual-do-postgresql>
+PORT=8080
+JWT_SECRET=<defina-uma-chave-secreta-forte-com-pelo-menos-32-bytes>
+JWT_EXPIRATION_MS=86400000
+HIBERNATE_DDL_AUTO=update
+ADMIN_EMAIL=admin@lsmapas.com
+ADMIN_NAME=Administrador
+ADMIN_PASSWORD=<defina-uma-senha-forte>
+UPLOAD_DIR=uploads
+
+Rede Docker: icontainer-network
+PostgreSQL: postgresql-17:5432
+
+IMPORTANTE: troque a senha PostgreSQL que foi exposta anteriormente e atualize DATABASE_PASSWORD.
